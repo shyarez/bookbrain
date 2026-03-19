@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookBrain | AI Literature Assistant</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="background-elements">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <main class="app-container">
+        <header class="chat-header">
+            <div class="logo">
+                
+                <h1>BookBrain</h1>
+            </div>
+            <p class="subtitle">Your intelligent literature companion powered by bookbrain RAG</p>
+        </header>
+
+        <div class="chat-container">
+            <div id="chat-messages" class="chat-messages">
+                <div class="message system-message">
+                    <div class="message-content">
+                        Hello! I am BookBrain. Ask me any question about the documents you've ingested.
+                    </div>
+                </div>
+            </div>
+
+            <div class="typing-indicator" id="typing-indicator" style="display: none;">
+                <span></span><span></span><span></span>
+            </div>
+
+            <form id="chat-form" class="chat-input-area">
+                <input 
+                    type="text" 
+                    id="user-input" 
+                    class="chat-input" 
+                    placeholder="Ask a question about your books..." 
+                    autocomplete="off"
+                    required
+                >
+                <button type="submit" class="send-button" id="send-button" aria-label="Send message">
+                  send
+                </button>
+            </form>
+        </div>
+    </main>
+
+    <script src="/static/app.js"></script>
+</body>
+</html>
