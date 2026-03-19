@@ -1,4 +1,5 @@
-from langchain_community.chains import RetrievalQA
+# from langchain_community.chains import RetrievalQA
+from langchain_classic.chains.retrieval_qa.base import RetrievalQA
 from .retriever import load_vectorstore
 from .generator import get_llm
 
