@@ -7,14 +7,228 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="/static/style.css?v=2">
 </head>
 <body>
-    <div class="background-elements">
-        <div class="blob blob-1"></div>
-        <div class="blob blob-2"></div>
-        <div class="blob blob-3"></div>
+    <!--
+  ============================================================
+  BOOKBRAIN — Updated background-elements div
+  REPLACE your existing <div class="background-elements">
+  block in index.html with everything below this comment.
+  ============================================================
+-->
+
+<div class="background-elements">
+    <!-- Original blobs -->
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+
+    <!-- Sparkle particles -->
+    <div class="sparkles"></div>
+    <div class="sparkles2"></div>
+
+    <!-- Washi tape strips -->
+    <div class="washi washi-1"></div>
+    <div class="washi washi-2"></div>
+    <div class="washi washi-3"></div>
+
+    <!-- ── NEWSPAPER CLIPPINGS ── -->
+    <div class="newspaper clip-1">
+        <div class="tape"></div>
+        <div class="newspaper-head">The Literary Gazette</div>
+        <div class="newspaper-body">
+            <div class="newspaper-pull">"A reader lives a thousand lives before he dies."</div>
+            Books have long been considered windows into other worlds, offering readers a chance to explore places, times and minds beyond their own experience of life…
+        </div>
     </div>
+
+    <div class="newspaper clip-2">
+        <div class="tape"></div>
+        <div class="newspaper-head">Morning Post · Books</div>
+        <div class="newspaper-body">
+            <div class="newspaper-pull">"So many books, so little time."</div>
+            Libraries across the country reported record borrowing numbers this autumn as readers sought quiet refuge among the pages of beloved classics and new releases…
+        </div>
+    </div>
+
+    <div class="newspaper clip-3">
+        <div class="tape"></div>
+        <div class="newspaper-head">Weekend Review</div>
+        <div class="newspaper-body">
+            <div class="newspaper-pull">"Not all those who wander are lost."</div>
+            The golden age of reading rooms sees a revival, as cosy reading nooks become the most coveted spaces in homes and cafés alike this season…
+        </div>
+    </div>
+
+    <div class="newspaper clip-4">
+        <div class="tape"></div>
+        <div class="newspaper-head">The Bibliophile · Vol. IV</div>
+        <div class="newspaper-body">
+            <div class="newspaper-pull">"There is no friend as loyal as a book."</div>
+            Bookshops are thriving once more, with independent sellers reporting a renaissance of hand-selling and personal recommendation bringing readers back…
+        </div>
+    </div>
+
+    <!-- ── MINI BOOKS (SVG) ── -->
+
+    <!-- Book 1 — dusty rose -->
+    <svg class="book book-1" viewBox="0 0 52 70" xmlns="http://www.w3.org/2000/svg">
+        <rect x="6"  y="2" width="40" height="66" rx="3" fill="#e8b4aa"/>
+        <rect x="6"  y="2" width="8"  height="66" rx="2" fill="#c4857a"/>
+        <rect x="14" y="2" width="1"  height="66" fill="rgba(0,0,0,.08)"/>
+        <rect x="10" y="18" width="28" height="1.5" rx="1" fill="rgba(255,255,255,.5)"/>
+        <rect x="10" y="24" width="20" height="1.5" rx="1" fill="rgba(255,255,255,.4)"/>
+        <rect x="10" y="30" width="24" height="1.5" rx="1" fill="rgba(255,255,255,.4)"/>
+        <rect x="10" y="36" width="18" height="1.5" rx="1" fill="rgba(255,255,255,.35)"/>
+        <text x="26" y="12" text-anchor="middle" font-family="serif" font-size="5.5" font-style="italic" fill="rgba(255,255,255,.85)">Poetry</text>
+    </svg>
+
+    <!-- Book 2 — sage green -->
+    <svg class="book book-2" viewBox="0 0 44 62" xmlns="http://www.w3.org/2000/svg">
+        <rect x="4"  y="2" width="36" height="58" rx="3" fill="#9cb89a"/>
+        <rect x="4"  y="2" width="7"  height="58" rx="2" fill="#7a9878"/>
+        <rect x="11" y="2" width="1"  height="58" fill="rgba(0,0,0,.07)"/>
+        <rect x="13" y="16" width="22" height="1.5" rx="1" fill="rgba(255,255,255,.5)"/>
+        <rect x="13" y="22" width="16" height="1.5" rx="1" fill="rgba(255,255,255,.4)"/>
+        <rect x="13" y="28" width="20" height="1.5" rx="1" fill="rgba(255,255,255,.4)"/>
+        <text x="22" y="11" text-anchor="middle" font-family="serif" font-size="5" font-style="italic" fill="rgba(255,255,255,.85)">Essays</text>
+    </svg>
+
+    <!-- Book 3 — warm amber -->
+    <svg class="book book-3" viewBox="0 0 38 58" xmlns="http://www.w3.org/2000/svg">
+        <rect x="3" y="1" width="32" height="56" rx="3" fill="#e0aa6a"/>
+        <rect x="3" y="1" width="6"  height="56" rx="2" fill="#c08840"/>
+        <rect x="9" y="1" width="1"  height="56" fill="rgba(0,0,0,.08)"/>
+        <rect x="12" y="14" width="18" height="1.5" rx="1" fill="rgba(255,255,255,.5)"/>
+        <rect x="12" y="20" width="13" height="1.5" rx="1" fill="rgba(255,255,255,.4)"/>
+        <rect x="12" y="26" width="16" height="1.5" rx="1" fill="rgba(255,255,255,.4)"/>
+        <text x="19" y="10" text-anchor="middle" font-family="serif" font-size="4.5" font-style="italic" fill="rgba(255,255,255,.85)">Classics</text>
+    </svg>
+
+    <!-- Book 4 — lavender -->
+    <svg class="book book-4" viewBox="0 0 48 65" xmlns="http://www.w3.org/2000/svg">
+        <rect x="5"  y="2" width="38" height="61" rx="3" fill="#c5b8d8"/>
+        <rect x="5"  y="2" width="7"  height="61" rx="2" fill="#a898c0"/>
+        <rect x="12" y="2" width="1"  height="61" fill="rgba(0,0,0,.08)"/>
+        <rect x="15" y="16" width="22" height="1.5" rx="1" fill="rgba(255,255,255,.5)"/>
+        <rect x="15" y="22" width="15" height="1.5" rx="1" fill="rgba(255,255,255,.4)"/>
+        <rect x="15" y="28" width="20" height="1.5" rx="1" fill="rgba(255,255,255,.4)"/>
+        <rect x="15" y="34" width="12" height="1.5" rx="1" fill="rgba(255,255,255,.35)"/>
+        <text x="24" y="11" text-anchor="middle" font-family="serif" font-size="5" font-style="italic" fill="rgba(255,255,255,.85)">Fiction</text>
+    </svg>
+
+    <!-- ── BUTTERFLIES (SVG) ── -->
+
+    <!-- Butterfly 1 — warm amber/orange -->
+    <svg class="butterfly bfly-1" width="54" height="42" viewBox="0 0 54 42" xmlns="http://www.w3.org/2000/svg">
+        <g style="transform-origin:27px 21px; animation:wingFlap 1.8s ease-in-out infinite">
+            <ellipse cx="16" cy="18" rx="14" ry="10" fill="#e8a558" opacity=".85"/>
+            <ellipse cx="12" cy="28" rx="10" ry="7"  fill="#d4843c" opacity=".8"/>
+            <ellipse cx="17" cy="19" rx="5"  ry="3.5" fill="rgba(255,230,180,.6)"/>
+            <ellipse cx="13" cy="28" rx="4"  ry="2.5" fill="rgba(255,210,160,.5)"/>
+            <circle  cx="22" cy="15" r="2"  fill="#b86820" opacity=".4"/>
+        </g>
+        <g style="transform-origin:27px 21px; animation:wingFlapR 1.8s ease-in-out infinite">
+            <ellipse cx="38" cy="18" rx="14" ry="10" fill="#e8a558" opacity=".85"/>
+            <ellipse cx="42" cy="28" rx="10" ry="7"  fill="#d4843c" opacity=".8"/>
+            <ellipse cx="37" cy="19" rx="5"  ry="3.5" fill="rgba(255,230,180,.6)"/>
+            <ellipse cx="41" cy="28" rx="4"  ry="2.5" fill="rgba(255,210,160,.5)"/>
+            <circle  cx="32" cy="15" r="2"  fill="#b86820" opacity=".4"/>
+        </g>
+        <ellipse cx="27" cy="22" rx="2" ry="10" fill="#6b4020"/>
+        <line x1="24" y1="14" x2="18" y2="8" stroke="#6b4020" stroke-width=".8" stroke-linecap="round"/>
+        <line x1="30" y1="14" x2="36" y2="8" stroke="#6b4020" stroke-width=".8" stroke-linecap="round"/>
+        <circle cx="18" cy="8"  r="1.5" fill="#6b4020"/>
+        <circle cx="36" cy="8"  r="1.5" fill="#6b4020"/>
+    </svg>
+
+    <!-- Butterfly 2 — dusty rose/blush -->
+    <svg class="butterfly bfly-2" width="46" height="36" viewBox="0 0 46 36" xmlns="http://www.w3.org/2000/svg">
+        <g style="transform-origin:23px 18px; animation:wingFlap 2.2s .3s ease-in-out infinite">
+            <ellipse cx="13" cy="15" rx="11" ry="8" fill="#e0a0a0" opacity=".85"/>
+            <ellipse cx="10" cy="24" rx="8"  ry="6" fill="#c87878" opacity=".8"/>
+            <ellipse cx="14" cy="16" rx="4"  ry="2.5" fill="rgba(255,210,210,.6)"/>
+        </g>
+        <g style="transform-origin:23px 18px; animation:wingFlapR 2.2s .3s ease-in-out infinite">
+            <ellipse cx="33" cy="15" rx="11" ry="8" fill="#e0a0a0" opacity=".85"/>
+            <ellipse cx="36" cy="24" rx="8"  ry="6" fill="#c87878" opacity=".8"/>
+            <ellipse cx="32" cy="16" rx="4"  ry="2.5" fill="rgba(255,210,210,.6)"/>
+        </g>
+        <ellipse cx="23" cy="19" rx="1.8" ry="8" fill="#7a3838"/>
+        <line x1="21" y1="12" x2="16" y2="7" stroke="#7a3838" stroke-width=".8" stroke-linecap="round"/>
+        <line x1="25" y1="12" x2="30" y2="7" stroke="#7a3838" stroke-width=".8" stroke-linecap="round"/>
+        <circle cx="16" cy="7" r="1.2" fill="#7a3838"/>
+        <circle cx="30" cy="7" r="1.2" fill="#7a3838"/>
+    </svg>
+
+    <!-- Butterfly 3 — sage green/teal -->
+    <svg class="butterfly bfly-3" width="50" height="38" viewBox="0 0 50 38" xmlns="http://www.w3.org/2000/svg">
+        <g style="transform-origin:25px 19px; animation:wingFlap 1.6s .6s ease-in-out infinite">
+            <ellipse cx="14" cy="16" rx="12" ry="9" fill="#88b898" opacity=".85"/>
+            <ellipse cx="11" cy="26" rx="9"  ry="6.5" fill="#5a9870" opacity=".8"/>
+            <ellipse cx="15" cy="17" rx="4.5" ry="3"  fill="rgba(180,230,200,.55)"/>
+        </g>
+        <g style="transform-origin:25px 19px; animation:wingFlapR 1.6s .6s ease-in-out infinite">
+            <ellipse cx="36" cy="16" rx="12" ry="9" fill="#88b898" opacity=".85"/>
+            <ellipse cx="39" cy="26" rx="9"  ry="6.5" fill="#5a9870" opacity=".8"/>
+            <ellipse cx="35" cy="17" rx="4.5" ry="3"  fill="rgba(180,230,200,.55)"/>
+        </g>
+        <ellipse cx="25" cy="20" rx="2" ry="9" fill="#2a5038"/>
+        <line x1="23" y1="12" x2="17" y2="6" stroke="#2a5038" stroke-width=".8" stroke-linecap="round"/>
+        <line x1="27" y1="12" x2="33" y2="6" stroke="#2a5038" stroke-width=".8" stroke-linecap="round"/>
+        <circle cx="17" cy="6" r="1.3" fill="#2a5038"/>
+        <circle cx="33" cy="6" r="1.3" fill="#2a5038"/>
+    </svg>
+
+    <!-- Butterfly 4 — lavender -->
+    <svg class="butterfly bfly-4" width="40" height="32" viewBox="0 0 40 32" xmlns="http://www.w3.org/2000/svg">
+        <g style="transform-origin:20px 16px; animation:wingFlap 2s .9s ease-in-out infinite">
+            <ellipse cx="11" cy="13" rx="9" ry="7" fill="#b8a8d8" opacity=".85"/>
+            <ellipse cx="9"  cy="22" rx="7" ry="5" fill="#9880b8" opacity=".8"/>
+        </g>
+        <g style="transform-origin:20px 16px; animation:wingFlapR 2s .9s ease-in-out infinite">
+            <ellipse cx="29" cy="13" rx="9" ry="7" fill="#b8a8d8" opacity=".85"/>
+            <ellipse cx="31" cy="22" rx="7" ry="5" fill="#9880b8" opacity=".8"/>
+        </g>
+        <ellipse cx="20" cy="17" rx="1.5" ry="8" fill="#504060"/>
+        <line x1="18" y1="10" x2="14" y2="5" stroke="#504060" stroke-width=".7" stroke-linecap="round"/>
+        <line x1="22" y1="10" x2="26" y2="5" stroke="#504060" stroke-width=".7" stroke-linecap="round"/>
+        <circle cx="14" cy="5" r="1" fill="#504060"/>
+        <circle cx="26" cy="5" r="1" fill="#504060"/>
+    </svg>
+
+    <!-- ── DRIED FLOWER SPRIGS (SVG) ── -->
+
+    <!-- Sprig 1 — left side -->
+    <svg class="sprig sprig-1" width="60" height="120" viewBox="0 0 60 120" xmlns="http://www.w3.org/2000/svg">
+        <line x1="30" y1="115" x2="30" y2="10" stroke="#a89060" stroke-width="1.2" stroke-linecap="round"/>
+        <line x1="30" y1="80"  x2="15" y2="60" stroke="#a89060" stroke-width="1"   stroke-linecap="round"/>
+        <line x1="30" y1="70"  x2="45" y2="50" stroke="#a89060" stroke-width="1"   stroke-linecap="round"/>
+        <line x1="30" y1="55"  x2="18" y2="35" stroke="#a89060" stroke-width=".9"  stroke-linecap="round"/>
+        <ellipse cx="12" cy="58" rx="6" ry="9" fill="#c8a878" opacity=".75" transform="rotate(-20 12 58)"/>
+        <ellipse cx="47" cy="48" rx="5" ry="8" fill="#d4b488" opacity=".7"  transform="rotate(15 47 48)"/>
+        <ellipse cx="16" cy="33" rx="4" ry="7" fill="#bca070" opacity=".65" transform="rotate(-10 16 33)"/>
+        <ellipse cx="30" cy="12" rx="5" ry="8" fill="#c8a878" opacity=".75"/>
+        <circle cx="30" cy="10" r="3"   fill="#b09060" opacity=".8"/>
+        <circle cx="12" cy="54" r="2.5" fill="#b09060" opacity=".7"/>
+        <circle cx="47" cy="44" r="2"   fill="#b09060" opacity=".65"/>
+        <circle cx="16" cy="30" r="2"   fill="#b09060" opacity=".6"/>
+    </svg>
+
+    <!-- Sprig 2 — right side -->
+    <svg class="sprig sprig-2" width="55" height="100" viewBox="0 0 55 100" xmlns="http://www.w3.org/2000/svg">
+        <line x1="28" y1="98" x2="28" y2="8"  stroke="#9a8458" stroke-width="1.2" stroke-linecap="round"/>
+        <line x1="28" y1="65" x2="12" y2="48" stroke="#9a8458" stroke-width="1"   stroke-linecap="round"/>
+        <line x1="28" y1="52" x2="44" y2="38" stroke="#9a8458" stroke-width="1"   stroke-linecap="round"/>
+        <ellipse cx="9"  cy="45" rx="5" ry="8" fill="#d4b488" opacity=".7"  transform="rotate(-15 9 45)"/>
+        <ellipse cx="46" cy="35" rx="5" ry="7" fill="#c8a878" opacity=".7"  transform="rotate(12 46 35)"/>
+        <ellipse cx="28" cy="10" rx="6" ry="9" fill="#d8b890" opacity=".75"/>
+        <circle cx="28" cy="8"  r="3.5" fill="#b09060" opacity=".8"/>
+        <circle cx="9"  cy="42" r="2.5" fill="#b09060" opacity=".7"/>
+        <circle cx="46" cy="32" r="2"   fill="#b09060" opacity=".65"/>
+    </svg>
+</div>
 
     <main class="app-container">
         <header class="chat-header">
@@ -29,7 +243,7 @@
             <div id="chat-messages" class="chat-messages">
                 <div class="message system-message">
                     <div class="message-content">
-                        Hello! I am BookBrain. Ask me any question about the documents you've ingested.
+                        Hello! I am BookBrain. Ask me any question about Operating Systems.
                     </div>
                 </div>
             </div>
